@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,77 +6,45 @@
     <title>Simple Webpage</title>
     <style>
         body {
-            background-color: #b4d99441;
+            background-color: #f0f8ff; /* Alice Blue */
             margin: 0;
             padding: 0;
+            font-family: Arial, sans-serif;
         }
         header {
-            background-color: #175c19;
+            background-color: #4682b4; /* Steel Blue */
             color: white;
-            padding: 10px 0;
+            padding: 20px 0;
             text-align: center;
         }
-        .menu a {
-            float: left;
-            display: block;
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #5f9ea0; /* Cadet Blue */
+        }
+        nav button {
+            background-color: #98fb98; /* Pale Green */
+            color: black;
+            border: 1px solid #2f4f4f; /* Dark Slate Gray */
+            border-radius: 20px;
+            font-weight: bold;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            transition: background-color 0.15s, color 0.15s, box-shadow 0.15s;
+        }
+        nav button:hover {
+            background-color: #3cb371; /* Medium Sea Green */
             color: white;
+            box-shadow: 10px 10px 20px grey;
+        }
+        main {
+            padding: 20px;
             text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-        .menu a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-        .home-button {
-            background-color: #c4ebbf;
-            color: black;
-            border-color: rgb(18, 18, 27);
-            font-weight: bold;
-            border-radius: 20px;
-            cursor: pointer;
-            transition: opacity 0.15s, color 1s;
-            padding: 10px 20px;
-            margin-left: 650px;
-        }
-        .home-button:hover {
-            background-color: rgb(15, 66, 13);
-            color: white;
-            box-shadow: 10px 10px 20px grey;
-        }
-        .about-menu {
-            background-color: #c4ebbf;
-            color: black;
-            border-color: rgb(18, 18, 27);
-            border-radius: 20px;
-            cursor: pointer;
-            transition: opacity 0.15s, color 1s;
-            padding: 10px 20px;
-            font-weight: bold;
-            margin-top: 30px;
-        }
-        .about-menu:hover {
-            background-color: rgb(15, 66, 13);
-            color: white;
-            box-shadow: 10px 10px 20px grey;
-        }
-        .contact-button {
-            background-color: #c4ebbf;
-            color: black;
-            border-color: rgb(18, 18, 27);
-            border-radius: 20px;
-            cursor: pointer;
-            transition: opacity 0.15s, color 1s;
-            padding: 10px 20px;
-            font-weight: bold;
-        }
-        .contact-button:hover {
-            background-color: rgb(15, 66, 13);
-            color: white;
-            box-shadow: 10px 10px 20px grey;
+            background-color: #faf0e6; /* Linen */
         }
         footer {
-            background-color: #175c19;
+            background-color: #4682b4; /* Steel Blue */
             color: white;
             text-align: center;
             padding: 10px 0;
@@ -92,16 +59,18 @@
         <h1>Hello! World</h1>
     </header>
 
-    <div class="menu">
+    <nav>
         <button class="home-button">Home</button>
-        <button class="about-menu">About</button>
+        <button class="about-button">About</button>
         <button class="contact-button">Contact</button>
-    </div>
+    </nav>
 
     <main>
-        <h2>About This Page</h2>
-        <p>This side Harshitha. This is my first basic webpage. In this webpage, I've concentrated a bit more on buttons.</p>
-        <a href="https://github.com/shirha20" class="1a">My GitHub profile</a>
+        <section>
+            <h2>About This Page</h2>
+            <p>This side Harshitha. This is my first basic webpage. In this webpage, I've concentrated a bit more on buttons.</p>
+            <p><a href="https://github.com/shirha20">My GitHub profile</a></p>
+        </section>
     </main>
 
     <footer>
